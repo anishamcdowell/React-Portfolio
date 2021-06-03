@@ -4,11 +4,11 @@ import ProfilePic from "../Components/ProfilePic";
 
 function Header() {
     return(
-        <header class="row bg-primary p-5 d-flex justify-content-evenly">
-            <div class="col-md-5 text-white lh-sm">
+        <header class="row bg-primary bg-gradient p-5 d-flex justify-content-evenly">
+            <div class="col-md-5 text-white lh-sm align-self-center">
                 <h1>Anisha McDowell</h1>
                 <Paragraph>
-                    <p>Testing line height, testing line height, testing line height. Testing line height, testing line height, testing line height. Testing line height, testing line height, testing line height. </p>
+                    <p>Fullstack developer based in Charlotte, NC</p>
                 </Paragraph>
             </div>
             <div class="col-md-3">
