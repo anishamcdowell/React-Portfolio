@@ -1,11 +1,9 @@
 import React from "react";
-import RoundedImage from "../Components/RoundedImage";
 import profilePic from "../assets/profile.jpg";
-
 
 function ProfilePic() {
     return (
-        <RoundedImage src={profilePic} />
+        <img class="image rounded-circle" src={profilePic} width="250px" alt="Anisha McDowell"/>
     )
 }
 

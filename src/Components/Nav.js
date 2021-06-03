@@ -1,5 +1,4 @@
 import React from "react";
-import RoundedImage from "../Components/RoundedImage";
 
 function Nav() {
     return (
