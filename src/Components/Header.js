@@ -1,6 +1,9 @@
 import React from "react";
 import Paragraph from "../Components/Paragraph";
 import RoundedImage from "../Components/RoundedImage";
+import ProfilePic from "../Components/ProfilePic";
+import profilePic from "../assets/profile.jpg";
+
 
 function Header() {
     return(
