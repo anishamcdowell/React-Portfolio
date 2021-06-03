@@ -1,5 +1,6 @@
 import React from "react";
 import Paragraph from "../Components/Paragraph";
+import RoundedImage from "../Components/RoundedImage";
 
 function Header() {
     return(
@@ -11,7 +12,7 @@ function Header() {
                 </Paragraph>
             </div>
             <div class="col-md-3">
-                <img class="image rounded-circle" src="../../public/profile.jpg" alt="Anisha McDowell" />
+                <RoundedImage />
             </div>
         </header>
     )
