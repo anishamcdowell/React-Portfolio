@@ -1,15 +1,15 @@
 import React from "react";
 import Nav from "./Components/Nav";
 import Header from "./Components/Header";
+import Portfolio from "./Components/Portfolio/Portfolio"
 import Footer from "./Components/Footer";
-import Carousel from "./Components/Carousel";
 
 function App() {
   return (
     <div className="App">
      <Nav />
      <Header />
-     <Carousel />
+     <Portfolio />
      <Footer />
     </div>
   );
