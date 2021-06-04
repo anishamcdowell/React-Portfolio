@@ -1,0 +1,13 @@
+const projectObj = {
+    image: "",
+    title: "",
+    subtitle: {
+        languages: [],
+        technologies: []
+    },
+    description: "",
+    links: {
+        deployedLink: "",
+        githubLink: ""
+    }
+}
