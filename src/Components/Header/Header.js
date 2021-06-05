@@ -7,8 +7,8 @@ import "../ProfilePic/profilepic.css";
 
 function Header() {
     return(
-        <header className="row d-flex justify-content-evenly bg-gradient" id="header">
-            <div className="col-md-5 text-white lh-sm align-self-center" id="header-text-container">
+        <header className="row d-flex justify-content-around bg-gradient p-5" id="header">
+            <div className="col-md-6 text-white lh-sm align-self-center justify-content-center" id="header-text-container">
                 <h1>Anisha McDowell</h1>
                 <Paragraph>
                     Fullstack developer based in Charlotte, NC.
@@ -17,7 +17,7 @@ function Header() {
                 <SmallBtn>More About Me</SmallBtn>
                 </div>
             </div>
-            <div className="col-md-3 profile-pic" id="profile-pic-container">
+            <div className="col-md-4 profile-pic d-flex justify-content-center" id="profile-pic-container">
                 <ProfilePic/>
             </div>
         </header>
