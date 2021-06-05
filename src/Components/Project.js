@@ -3,7 +3,7 @@ import TextCard from "./TextCard";
 
 const placeholderImg = "https://misterrogers.org/wp-content/uploads/2018/05/placeholder-1920x860.png";
 
-function Footer() {
+function Project() {
     return(
         <div className="row g-0">
         <div className="col-md-7">
@@ -18,10 +18,11 @@ function Footer() {
             </button>
         </div>
         <div className="col-md-5">
-        <TextCard/>
+        {/* TODO: FIGURE OUT HOW TO MAKE THE STATE OF THE TEXT CARD CHANGE BASED ON THE CAROUSEL BUTTON CLICKS     */}
+        <TextCard project="{STATE}"/>
         </div>
     </div>
     )
 }
 
-export default Footer;
+export default Project;

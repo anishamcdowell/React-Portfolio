@@ -1,0 +1,46 @@
+#header {
+    background-color: skyblue;
+    padding: 5rem;
+}
+
+@media (max-width: 767px) {
+    #header {
+        padding: 3rem;
+    }.profile-pic {
+        max-width: 250px;
+    }
+    #header-text-container,
+    #profile-pic-container {
+        width: 50%;
+    }
+    #profile-pic-container {
+        padding-top: 1rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    #header {
+        padding: 2rem;
+    }
+    .profile-pic {
+        max-width: 250px;
+    }
+    #header-text-container,
+    #profile-pic-container {
+        width: 100%;
+    }
+    #header-text-container {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+    }
+    #profile-pic-container {
+        display: flex;
+        justify-content: center;
+        padding-top: 0;
+    }
+    #small-header-btn {
+        margin-bottom: 1.5rem;
+    }
+  }

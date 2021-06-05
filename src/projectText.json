@@ -1,6 +1,5 @@
-const projectObj = {
-    image: "",
-    title: "",
+const projectTextObj = {
+    title: "title",
     subtitle: {
         languages: [],
         technologies: []
@@ -10,4 +9,8 @@ const projectObj = {
         deployedLink: "",
         githubLink: ""
     }
+  }
+
+const projectImageObj = {
+    image: "";
 }
