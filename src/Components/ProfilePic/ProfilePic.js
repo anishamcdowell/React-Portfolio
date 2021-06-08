@@ -4,7 +4,7 @@ import "./profilepic.css";
 
 function ProfilePic() {
     return (
-        <img className="image rounded-circle profile-pic w-100" src={profilePic} alt="Anisha McDowell"/>
+        <img className="image rounded-circle profile-pic" id="profile-pic" src={profilePic} alt="Anisha McDowell"/>
     )
 }
 

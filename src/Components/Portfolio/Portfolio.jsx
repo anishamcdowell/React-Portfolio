@@ -1,11 +1,11 @@
 import React from "react";
 import "./portfolio.css"
-import Carousel from "../Carousel";
+import ProjectCard from "../ProjectCard";
 
 function Portfolio() {
     return (
-        <div id="portfolio" className="">
-            <Carousel />
+        <div id="portfolio">
+            <ProjectCard />
         </div>
     )
 }
