@@ -9,10 +9,10 @@ function Header() {
     return(
         <header className="row d-flex justify-content-around bg-gradient p-5" id="header">
             <div className="col-md-6 text-white lh-sm align-self-center justify-content-center" id="header-text-container">
-                <h1>Anisha McDowell</h1>
-                <Paragraph>
-                    Fullstack developer based in Charlotte, NC.
-                </Paragraph>
+                <h1 className="h1">Anisha McDowell</h1>
+                <h2>
+                Fullstack developer based in Charlotte, NC
+                </h2>
                 <div id="small-header-btn">
                 <SmallBtn>More About Me</SmallBtn>
                 </div>

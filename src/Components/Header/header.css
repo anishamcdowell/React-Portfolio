@@ -2,6 +2,10 @@
     background-color: skyblue;
 }
 
+h2 {
+    font-size: 18px;
+}
+
 #header-text-container {
     padding-left: 8rem;
 }

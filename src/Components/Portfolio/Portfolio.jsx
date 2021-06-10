@@ -1,6 +1,6 @@
 import React from "react";
 import "./portfolio.css"
-import ProjectCard from "../ProjectCard";
+import ProjectCard from "../Projects/ProjectCard";
 
 function Portfolio() {
     return (
