@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./project.css";
 import Connect from "../../images/work/connect-img.png";
 import Media from "../../images/work/media-img.png";
