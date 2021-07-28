@@ -4,7 +4,7 @@ import "./footer.css";
 
 function Footer() {
     return(
-        <footer className="footer mb-auto py-4 bg-dark bg-gradient d-flex flex-column justify-content-evenly align-items-center">
+        <footer className="footer mb-auto py-4 bg-dark bg-gradient d-flex flex-column justify-content-evenly align-items-center" id="contact">
           <div id="icons-container">
       <ul id="socials-list">
           <li className="social-li">

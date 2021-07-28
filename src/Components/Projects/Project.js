@@ -31,7 +31,7 @@ const Project = () => {
 
   return (
 
-      <div id="card-container" className="p-3 bg-warning border-0 rounded-0 d-flex flex-column justify-items-center align-items-center">
+      <div id="portfolio" className="p-3 bg-warning border-0 rounded-0 d-flex flex-column justify-items-center align-items-center">
         <h3>Work</h3>
         {projects.map((project) => {
           return (

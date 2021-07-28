@@ -1,5 +1,4 @@
 import React from "react";
-import Paragraph from "../Paragraph";
 import ProfilePic from "../ProfilePic/ProfilePic";
 import SmallBtn from "../SmallBtn";
 import "./header.css";

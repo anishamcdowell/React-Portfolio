@@ -1,6 +1,7 @@
 import React from "react";
 import "./app.css";
 import Nav from "../Components/Nav";
+import About from "../Components/About Me/About";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 import Project from "../Components/Projects/Project";
@@ -18,6 +19,7 @@ function App() {
     <div className="App">
      <Nav />
      <Header />
+     <About />
      <Project />
      <Footer />
     </div>
