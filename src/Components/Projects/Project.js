@@ -35,8 +35,8 @@ const Project = () => {
         {projects.map((project) => {
           return (
             <div class="project-div">
-                <div className="text">
-                <div className="">
+                <div className="text bg-dark bg-gradient">
+                <div className="project-text">
                   <h4>{project.title}</h4>
                   <p>{project.description}</p>
                 </div>
