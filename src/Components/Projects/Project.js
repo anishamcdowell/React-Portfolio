@@ -1,27 +1,69 @@
-import React from "react";
-import TextCard from "../../Components/TextCard";
+import React, { useState } from "react";
+import "./project.css";
+import Connect from "../../images/work/connect-img.png";
+import Media from "../../images/work/media-img.png";
+import Notes from "../../images/work/notes-img.png";
 
-const placeholderImg = "https://misterrogers.org/wp-content/uploads/2018/05/placeholder-1920x860.png";
+const Project = () => {
+  const projects = [
+    {
+      title: ".connect( )",
+      description: "MERN stack dating web app for remote tech sector workers.",
+      deployedLink: "https://connect-dating-app.herokuapp.com/",
+      githubLink: "https://github.com/tmgorogers/Connect-Dating-App",
+      img: Connect,
+    },
+    {
+      title: "MEDIA-fi",
+      description: "Song recommendation web app using Giphy and Spotify APIs.",
+      deployedLink: "https://polar-atoll-49785.herokuapp.com/index.html",
+      githubLink: "https://github.com/anishamcdowell/Media-fi",
+      img: Media,
+    },
+    {
+      title: "Note Taker",
+      description: "Express note taking app utilizing CRUD operations.",
+      deployedLink: "https://arcane-gorge-39623.herokuapp.com/",
+      githubLink: "https://github.com/anishamcdowell/Note-Taker",
+      img: Notes,
+    },
+  ];
 
-function Project(props) {
-    return(
-        <div className="row g-0 p-4" id="project-card">
-        <div className="col-md-7">
-            <img src={placeholderImg} className="w-100" alt="..." />
-            {/* <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next w-100" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
-            </button> */}
-        </div>
-        <div className="col-md-5">
-            <TextCard />
-        </div>
-    </div>
-    )
-}
+  return (
+
+      <div id="card-container" className="p-3 bg-warning border-0 rounded-0 d-flex flex-column justify-items-center align-items-center">
+        <h3>Work</h3>
+        {projects.map((project) => {
+          return (
+            <div class="project-div">
+                <div className="text">
+                <div className="">
+                  <h4>{project.title}</h4>
+                  <p>{project.description}</p>
+                </div>
+                <div className="links">
+                  <a href={project.deployedLink} className="link">
+                    Deployed Project
+                  </a>
+                  <a href={project.githubLink} className="link">
+                    GitHub Codebase
+                  </a>
+                </div>
+              </div>
+              <div
+                className="image"
+                style={{
+                  backgroundImage: `url(${project.img})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              ></div>
+            </div>
+          );
+        })}
+      </div>
+
+  );
+};
 
 export default Project;

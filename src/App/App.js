@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./app.css";
-import { ProjectContext } from "../context";
 import Nav from "../Components/Nav";
 import Header from "../Components/Header/Header";
-import Portfolio from "../Components/Portfolio/Portfolio"
 import Footer from "../Components/Footer";
+import Project from "../Components/Projects/Project";
 
 function App() {
-  const [projects, setProject] = useState([]);
 
   
 
@@ -15,7 +13,7 @@ function App() {
     <div className="App">
      <Nav />
      <Header />
-     <Portfolio />
+     <Project />
      <Footer />
     </div>
   );
