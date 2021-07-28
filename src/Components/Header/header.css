@@ -1,5 +1,14 @@
 #header {
     background-color: skyblue;
+    height: 100%vh;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.h1 {
+    font-size: 90px;
+    font-weight: bold;
 }
 
 h2 {
@@ -7,11 +16,34 @@ h2 {
 }
 
 #header-text-container {
-    padding-left: 8rem;
+    position: relative;
+    top: -14rem;
+    left: 17rem;
+    font-size: 50px;
 }
-#profile-pic-container {
-    margin-right: 6rem;
+
+.header-font {
+    z-index: 99;
+    margin: 6rem 0 0 3rem;
+    width: 70%;
+
 }
+
+#logo {
+    position: absolute;
+}
+
+#img-div {
+    width: 30%;
+    position: relative;
+    top: -4rem;
+    right: 7rem;
+}
+
+
+
+
+
 
 @media (max-width: 1000px) {
     #header-text-container {
