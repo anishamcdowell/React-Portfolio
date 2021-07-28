@@ -1,4 +1,7 @@
 #profile-pic {
-   width: 100%;
-   height: auto;
+  width: 100%;
+  height: auto;
+  /* box-shadow: 19px 12px 26px -8px rgba(0, 0, 0, 0.62);
+  -webkit-box-shadow: 19px 12px 26px -8px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: 19px 12px 26px -8px rgba(0, 0, 0, 0.62); */
 }

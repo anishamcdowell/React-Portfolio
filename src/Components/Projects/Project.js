@@ -30,9 +30,8 @@ const Project = () => {
   ];
 
   return (
-
       <div id="portfolio" className="p-3 bg-warning border-0 rounded-0 d-flex flex-column justify-items-center align-items-center">
-        <h3>Work</h3>
+        <div id="project-map-container">
         {projects.map((project) => {
           return (
             <div class="project-div">
@@ -61,6 +60,7 @@ const Project = () => {
             </div>
           );
         })}
+        </div>
       </div>
 
   );

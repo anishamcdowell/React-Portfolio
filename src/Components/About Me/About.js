@@ -22,25 +22,23 @@ export const About = () => {
   return (
     <div id="about">
       <div id="bio" className="about-section">
+        <div className="d-flex justify-content-center">
           <h3>Bio</h3>
+          </div>
           <div className="bordered-content">
         <p>
-          Full stack web developer and designer from Charlotte, NC with 1 year
-          of experience. July 2021 gradaute of UNC Charlotte's Full Stack Web
-          Development Coding Bootcamp. UNC Pembroke alumni with a Bachelor of
-          Arts in Art, May 2017.
+          Full stack web developer based in Charlotte, NC with 1 year of experience in backend development and 2 years experience with frontend development. July 2021 gradaute of UNC Charlotte's Full Stack Web Development Coding Bootcamp. 
         </p>
         <p>
-          Outside of web development and design, I enjoy other creative activies
-          pke drawing, painting, and writing. I also love to stay active with
-          dance and strength training. In between creative or active interests,
-          I can be found reading or taking too many pictures of my cat.
+          Outside of web development and design, I enjoy other creative activies like drawing, painting, and writing.
         </p>
         </div>
       </div>
       <div id="and"><p>&</p></div>
       <div id="skills-container"  className="about-section">
-      <h3>Skills</h3>
+      <div className="d-flex justify-content-center">
+          <h3>Skills</h3>
+          </div>
       <div id="skills" className="bordered-content">
         <div id="frontend-skills">
             <p className="skill-header">Frontend</p>

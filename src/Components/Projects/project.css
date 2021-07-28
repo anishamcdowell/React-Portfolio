@@ -1,21 +1,39 @@
+#portfolio h3 {
+  font-size: 50px;
+  color: white;
+  margin: 3rem 0;
+}
+
 .project-div {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem 0;
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  box-shadow: -11px 12px 26px -8px rgba(0,0,0,0.62);
+-webkit-box-shadow: -11px 12px 26px -8px rgba(0,0,0,0.62);
+-moz-box-shadow: -11px 12px 26px -8px rgba(0,0,0,0.62);
 }
 
 .image {
-    width: 60%;
-    height: 300px;
+  width: 70%;
+  height: 350px;
 }
 
 .text {
-    background-color: black;
-    width: 20%;
-    height: 300px;
-    color: white;
-    padding: 4rem 2rem;
+  border: 1px solid white;
+  background-color: skyblue;
+  width: 30%;
+  height: 350px;
+  color: white;
+  padding: 4rem 2rem;
+}
+
+#project-map-container {
+  margin: 4rem 0 5rem 0;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
