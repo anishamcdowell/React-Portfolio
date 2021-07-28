@@ -1,6 +1,6 @@
 #header {
     background-color: skyblue;
-    height: 100%vh;
+    height: 100vh;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -37,7 +37,7 @@ h2 {
     width: 30%;
     position: relative;
     top: -4rem;
-    right: 7rem;
+    right: 6rem;
 }
 
 
