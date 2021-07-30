@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./about.css";
 
 export const About = () => {
@@ -19,22 +19,42 @@ export const About = () => {
   ];
   const generalSkills = ["Git", "OOP", "MVC"];
 
+  const [width, setWidth] = useState(window.innerWidth);
+  const handleResize = () => {
+    setWidth(window.innerWidth);
+  }
+  const breakpoint = 1000;
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize)
+  }, [width])
+
+  console.log(width);
+
   return (
     <div id="about">
+
       <div id="bio" className="about-section">
+
         <div className="d-flex justify-content-center">
           <h3>Bio</h3>
-          </div>
-          <div className="bordered-content">
+        </div>
+
+        <div className="bordered-content" id="bio-text">
         <p>
-          Full stack web developer based in Charlotte, NC with 1 year of experience in backend development and 2 years experience with frontend development. July 2021 gradaute of UNC Charlotte's Full Stack Web Development Coding Bootcamp. 
+          Full stack web developer based in Charlotte, NC with 1 year of experience in backend development and 2 years experience with frontend development. July 2021 graduate of UNC Charlotte's Full Stack Web Development Coding Bootcamp. 
         </p>
         <p>
           Outside of web development and design, I enjoy other creative activies like drawing, painting, and writing.
         </p>
         </div>
       </div>
-      <div id="and"><p>&</p></div>
+      {width <= breakpoint ? (
+        <></>
+      ) : (
+        <div id="and"><p>&</p></div>
+      )}    
       <div id="skills-container"  className="about-section">
       <div className="d-flex justify-content-center">
           <h3>Skills</h3>
