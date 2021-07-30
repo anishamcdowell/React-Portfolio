@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./project.css";
+import MobileProjects from "../Mobile Components/Project Card/MobileProjects";
 import Connect from "../../images/work/connect-img.png";
 import Media from "../../images/work/media-img.png";
 import Notes from "../../images/work/notes-img.png";
 
-const Project = () => {
+const Project = (props) => {
+  const [width, setWidth] = useState(window.innerWidth);
+  const handleResize = () => {
+    setWidth(window.innerWidth);
+  }
+  const breakpoint = 980;
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize)
+  }, [width])
+
+  console.log(width);
+
   const projects = [
     {
       title: ".connect( )",
@@ -31,36 +45,49 @@ const Project = () => {
 
   return (
       <div id="portfolio" className="p-3 bg-warning border-0 rounded-0 d-flex flex-column justify-items-center align-items-center">
-        <div id="project-map-container">
-        {projects.map((project) => {
-          return (
-            <div class="project-div">
-                <div className="text bg-dark bg-gradient">
-                <div className="project-text">
-                  <h4>{project.title}</h4>
-                  <p>{project.description}</p>
+        {width <= breakpoint ? (
+          projects.map((project) => {
+            return (
+              <MobileProjects 
+              title={project.title}
+              description={project.description}
+              deployedLink={project.deployedLink}
+              githubLink={project.githubLink}
+              img={project.img}/>
+            )
+          })
+        ) : (
+          <div id="project-map-container">
+          {projects.map((project) => {
+            return (
+              <div class="project-div">
+                  <div className="text bg-dark bg-gradient">
+                  <div className="project-text">
+                    <h4>{project.title}</h4>
+                    <p>{project.description}</p>
+                  </div>
+                  <div className="links">
+                    <a href={project.deployedLink} className="link">
+                      Deployed Project
+                    </a>
+                    <a href={project.githubLink} className="link">
+                      GitHub Codebase
+                    </a>
+                  </div>
                 </div>
-                <div className="links">
-                  <a href={project.deployedLink} className="link">
-                    Deployed Project
-                  </a>
-                  <a href={project.githubLink} className="link">
-                    GitHub Codebase
-                  </a>
-                </div>
+                <div
+                  className="image"
+                  style={{
+                    backgroundImage: `url(${project.img})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                ></div>
               </div>
-              <div
-                className="image"
-                style={{
-                  backgroundImage: `url(${project.img})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
-              ></div>
-            </div>
-          );
-        })}
-        </div>
+            );
+          })}
+          </div>
+        )}
       </div>
 
   );
