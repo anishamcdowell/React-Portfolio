@@ -1,0 +1,14 @@
+#mheader-div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 25rem;
+    background: skyblue;
+    margin-top: 4rem;
+    padding: 3rem;
+    overflow-y: hidden;
+}
+
+#mobile-logo {
+    background-color: red;
+}

@@ -9,12 +9,12 @@ function Header() {
     return(
         <header id="header">
             <div className="header-font">
-            <Logo id="logo"/>
+            <Logo id="logo" />
             <div className="col-md-6 text-white lh-sm align-self-center justify-content-center" id="header-text-container">
             <h1 className="name" style={{fontSize: '90px', fontWeight: 'bold'}}>nisha McDowell</h1>
             </div>
             </div>
-            <div id="img-div">
+            <div className="img-div">
             <ProfilePic />
             </div>
         </header>
