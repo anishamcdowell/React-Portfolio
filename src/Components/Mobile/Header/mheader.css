@@ -1,3 +1,10 @@
+.container {
+    width: 100%;
+    background: red;
+    display: flex;
+    justify-content: center;
+}
+
 #mheader-div {
     display: flex;
     flex-flow: row nowrap;
@@ -6,13 +13,6 @@
     margin-bottom: 3rem;
     overflow-y: hidden;
     position: relative;
-    left: 13%;
-}
-
-@media screen and (max-width: 890px) {
-    #mheader-div {
-        left: 8%;
-    }
 }
 
 @media screen and (max-width: 580px) {

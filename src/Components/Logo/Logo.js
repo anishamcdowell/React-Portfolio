@@ -7,7 +7,7 @@ const Logo = () => {
       setWidth(window.innerWidth);
     }
     const largebreakpoint = 680;
-    const smallbreakpoint = 580;
+    const smallbreakpoint = 400;
   
     useEffect(() => {
       window.addEventListener('resize', handleResize);
