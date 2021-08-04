@@ -1,10 +1,12 @@
 ![Portfolio Header](src/images/readme-header.png)
-# WELCOME TO MY PORTOFLIO!
+# **Deployed portfolio on** [**Heroku.**](http://anishamcdowell.herokuapp.com)
 
-This portfolio was created using React to share my most recently completed web development projects. **As of August 4th, 2021** this portfolio contains the following projects:
+This portfolio was created using React to share my most recently completed web development projects. 
+
+**As of August 4th, 2021** this portfolio contains the following projects:
 
 ## ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `.connect()` 
-is a dating web application created with the MERN stack and deployed to Heroku. Other technologies used were Bootstrap (styling) Passport (user authentication), Multer and Cloudinary (uploading photos), and EmailJS and Nodemailer (receiving and sending emails to registered users).
+is a dating web application created with the MERN stack and deployed to Heroku. Other technologies used were Bootstrap (styling) Passport (user authentication), Stocket.io (chat function), Multer and Cloudinary (uploading photos), and EmailJS and Nodemailer (receiving and sending emails to registered users).
 
 * [Deployed Project](https://connect-dating-app.herokuapp.com/)
 * [GitHub Repository](https://github.com/tmgorogers/Connect-Dating-App)
