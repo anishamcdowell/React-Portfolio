@@ -44,7 +44,7 @@ const Project = (props) => {
   ];
 
   return (
-      <div id="portfolio" className="p-3 bg-warning border-0 rounded-0 d-flex flex-column justify-items-center align-items-center">
+      <div id="portfolio" className="p-3 border-0 rounded-0 d-flex flex-column justify-items-center align-items-center">
         {width <= breakpoint ? (
           projects.map((project) => {
             return (

@@ -1,14 +1,23 @@
 #mheader-div {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
-    height: 25rem;
-    background: skyblue;
-    margin-top: 4rem;
-    padding: 3rem;
+    height: fit-content;
+    padding-top: 6rem;
+    margin-bottom: 3rem;
     overflow-y: hidden;
+    position: relative;
+    left: 13%;
 }
 
-#mobile-logo {
-    background-color: red;
+@media screen and (max-width: 890px) {
+    #mheader-div {
+        left: 8%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #mheader-div {
+        padding-top: 0;
+        margin-top: 25%;
+    }
 }

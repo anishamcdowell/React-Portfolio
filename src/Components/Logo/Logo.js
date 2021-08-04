@@ -6,7 +6,8 @@ const Logo = () => {
     const handleResize = () => {
       setWidth(window.innerWidth);
     }
-    const breakpoint = 680;
+    const largebreakpoint = 680;
+    const smallbreakpoint = 580;
   
     useEffect(() => {
       window.addEventListener('resize', handleResize);
@@ -16,7 +17,7 @@ const Logo = () => {
     let logowidth;
     let logoheight;
 
-    if (width <= breakpoint) {
+    if (width <= largebreakpoint) {
         logowidth="200px";
         logoheight="200px";
     } else {
@@ -24,8 +25,13 @@ const Logo = () => {
         logoheight="300px";
     }
 
+    if (width <= smallbreakpoint) {
+      logowidth="100px";
+      logoheight="100px";
+    }
+
     return (
-        <div id="logo-div">
+        <div id="logo-div" style={{width: `${logowidth}`, height: `${logoheight}`}}>
             <img src={logoimg} style={{width: `${logowidth}`, height: `${logoheight}`}}/>
             </div>
     )

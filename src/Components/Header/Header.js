@@ -3,16 +3,14 @@ import ProfilePic from "../ProfilePic/ProfilePic";
 import SmallBtn from "../SmallBtn";
 import "./header.css";
 import "../ProfilePic/profilepic.css";
-import Logo from "../Logo/Logo";
+// import Logo from "../Logo/Logo";
+import BrandHeading from "../Brand Heading/BrandHeading";
 
 function Header() {
     return(
         <header id="header">
             <div className="header-font">
-            <Logo id="logo" />
-            <div className="col-md-6 text-white lh-sm align-self-center justify-content-center" id="header-text-container">
-            <h1 className="name" style={{fontSize: '90px', fontWeight: 'bold'}}>nisha McDowell</h1>
-            </div>
+            <BrandHeading />
             </div>
             <div className="img-div">
             <ProfilePic />

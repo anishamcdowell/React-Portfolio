@@ -17,7 +17,7 @@ function App() {
   const handleResize = () => {
     setWidth(window.innerWidth);
   }
-  const breakpoint = 980;
+  const breakpoint = 1020;
 
   useEffect(() => {
     window.addEventListener('resize', handleResize);
@@ -25,7 +25,7 @@ function App() {
   }, [width])
   
   return (
-    <div className="app bg-warning">
+    <div id="app" style={{backgroundColor: 'skyblue'}}>
       {width <= breakpoint ? (
         <>
         <Nav />

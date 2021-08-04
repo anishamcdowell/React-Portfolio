@@ -1,0 +1,51 @@
+#brand-heading-div {
+    display: flex;
+    position: relative;
+    width: 100%;
+    z-index: 90;
+}
+
+#text-container {
+    height:fit-content;
+    position: absolute;
+    top: 6rem;
+    left: 14.5rem;
+    padding-left: 2rem;
+}
+
+#nisha {
+    position: relative;
+    left: -1.5rem;
+}
+
+.name {
+    font-size: 6rem;
+    font-weight: bold;
+    color: white;
+    line-height: 5rem;
+    overflow-y: hidden;
+}
+
+@media screen and (max-width: 830px) {
+    .name {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .name {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #text-container {
+        top: 4rem;
+        left: 10rem;
+        padding-left: 2rem;;
+    }
+    .name {
+        font-size: 4rem;
+        line-height: 3.2rem;
+    }
+}
