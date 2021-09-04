@@ -1,22 +1,21 @@
-import React from "react";
-import ProfilePic from "../ProfilePic/ProfilePic";
-import SmallBtn from "../SmallBtn";
-import "./header.css";
-import "../ProfilePic/profilepic.css";
-// import Logo from "../Logo/Logo";
-import BrandHeading from "../Brand Heading/BrandHeading";
+import React from 'react';
+import './header.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Neon from '../../images/neon-sign.png';
+import Logo from '../Logo/Logo';
 
 function Header() {
-    return(
-        <header id="header">
-            <div className="header-font">
-            <BrandHeading />
-            </div>
-            <div className="img-div">
-            <ProfilePic />
-            </div>
-        </header>
-    )
+  return (
+    <header id='header'>
+      <div className='header-banner'>
+        <Logo />
+      </div>
+      <div className='header-text'>
+        <h1>Anisha McDowell</h1>
+        <p>Full Stack Web Developer</p>
+      </div>
+    </header>
+  );
 }
 
 export default Header;

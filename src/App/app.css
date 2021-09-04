@@ -1,4 +1,44 @@
+/* font-family: 'Fredoka One', cursive;
+font-family: 'Libre Franklin', sans-serif;
+font-family: 'Neuton', serif;
+font-family: 'Yeseva One', cursive; */
+
+:root {
+  --pink: rgb(255, 49, 124);
+  --fuschia: rgb(143, 45, 86);
+  --orange: rgb(251, 139, 36);
+  --yellow: rgb(251, 177, 60);
+  --green: rgb(4, 167, 119);
+  --bluegreen: rgb(33, 131, 128);
+  --blue: rgb(115, 210, 222);
+  --purple: rgb(130, 2, 99);
+  --black: #231720;
+  --header-font: 'Yeseva One', cursive;
+  --body-font: 'Libre Franklin', serif;
+  --large-header: 7rem;
+  --med-header: 5rem;
+  --small-header: 3rem;
+  --large-body: 2rem;
+  --med-body: 1.5rem;
+  --small-body: 1rem;
+}
+
 #app {
-    margin: 0 auto;
-    padding: 0;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--header-font);
+}
+
+p {
+  font-family: var(--body-font);
+  color: var(--black);
 }
