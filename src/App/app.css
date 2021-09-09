@@ -8,9 +8,10 @@ font-family: 'Yeseva One', cursive; */
   --fuschia: rgb(143, 45, 86);
   --orange: rgb(251, 139, 36);
   --yellow: rgb(251, 177, 60);
-  --green: rgb(4, 167, 119);
+  --green: rgb(132, 197, 188);
   --bluegreen: rgb(33, 131, 128);
   --blue: rgb(115, 210, 222);
+  --lightpurple: rgb(131, 136, 255);
   --purple: rgb(130, 2, 99);
   --black: #231720;
   --header-font: 'Yeseva One', cursive;
@@ -25,8 +26,11 @@ font-family: 'Yeseva One', cursive; */
 
 #app {
   margin: 0 auto;
-  padding: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
   font-size: 10px;
+  background-color: var(--purple);
 }
 
 h1,

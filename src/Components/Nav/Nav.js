@@ -4,19 +4,19 @@ import './nav.css';
 function Nav() {
   const gold = { color: '#ffc107' };
   return (
-    <nav className='nav'>
+    <nav className='nav-div'>
       <div className='navlinks'>
-        <a className='navlink' href='#header'>
-          Home
-        </a>
         <a className='navlink' href='#about'>
-          About Me
+          About
         </a>
-        <a className='navlink' href='#portfolio'>
-          Portfolio
+        <a className='navlink' href='#work'>
+          Work
         </a>
         <a className='navlink' href='#contact'>
           Contact
+        </a>
+        <a className='navlink' href='#resume'>
+          Resume
         </a>
       </div>
       {/* <a className="navlink" href="">Resume</a> */}
