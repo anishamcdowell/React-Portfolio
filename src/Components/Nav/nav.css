@@ -2,19 +2,42 @@
   width: fit-content;
   height: fit-content;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.5);
   position: fixed;
+  top: 10%;
   right: 10%;
+  animation-name: intro;
+  animation-duration: 2s;
 }
 
 .navlinks {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-end;
+  text-align: right;
 }
 
 .navlink {
   text-decoration: none;
   font-size: 2rem;
   color: var(--lightpurple);
+  text-transform: uppercase;
+  line-height: 4rem;
+  text-underline-offset: 1rem;
+  transition: padding-right 1.25s, text-decoration 2s;
+}
+
+.navlink:hover {
+  color: white;
+  padding-right: 2rem;
+  text-decoration: var(--pink) underline;
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+    transform: skewX(20deg);
+  }
+  100% {
+    opacity: 1;
+  }
 }

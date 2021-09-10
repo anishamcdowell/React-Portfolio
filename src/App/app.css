@@ -1,7 +1,5 @@
-/* font-family: 'Fredoka One', cursive;
-font-family: 'Libre Franklin', sans-serif;
-font-family: 'Neuton', serif;
-font-family: 'Yeseva One', cursive; */
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
 
 :root {
   --pink: rgb(255, 49, 124);
@@ -11,11 +9,11 @@ font-family: 'Yeseva One', cursive; */
   --green: rgb(132, 197, 188);
   --bluegreen: rgb(33, 131, 128);
   --blue: rgb(115, 210, 222);
-  --lightpurple: rgb(131, 136, 255);
+  --lightpurple: rgb(146, 150, 255);
   --purple: rgb(130, 2, 99);
-  --black: #231720;
-  --header-font: 'Yeseva One', cursive;
-  --body-font: 'Libre Franklin', serif;
+  --black: #000;
+  --header-font: 'Poppins', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
   --large-header: 7rem;
   --med-header: 5rem;
   --small-header: 3rem;
@@ -26,11 +24,17 @@ font-family: 'Yeseva One', cursive; */
 
 #app {
   margin: 0 auto;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
   font-size: 10px;
-  background-color: var(--purple);
+}
+
+#app:before {
+  content: '';
+  width: 50rem;
+  height: 50rem;
+  background-color: yellow;
+  border-radius: 50%;
 }
 
 h1,

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './app.css';
+import gradientBg from '../assets/gradient-bg.jpg';
 import Nav from '../Components/Nav/Nav';
 import About from '../Components/AboutMe/About';
 import Header from '../Components/Header/Header';
@@ -53,7 +54,14 @@ function App() {
   }, [width]);
 
   return (
-    <div id='app' style={{ backgroundColor: 'skyblue' }}>
+    <div
+      id='app'
+      style={{
+        backgroundImage: `url(${gradientBg})`,
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed',
+        backgroundPosition: 'center',
+      }}>
       {width <= breakpoint ? (
         <>
           <Nav />

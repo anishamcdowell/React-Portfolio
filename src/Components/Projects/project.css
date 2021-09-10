@@ -18,7 +18,7 @@
   /* box-shadow: -11px 12px 26px -8px rgba(0,0,0,0.62);
 -webkit-box-shadow: -11px 12px 26px -8px rgba(0,0,0,0.62);
 -moz-box-shadow: -11px 12px 26px -8px rgba(0,0,0,0.62); */
-transform: skew(-8deg);
+  transform: skew(-8deg);
 }
 
 .image {
@@ -28,12 +28,12 @@ transform: skew(-8deg);
 }
 
 .project-text h4 {
-    font-size: 35px;
-    font-weight: bold;
+  font-size: 35px;
+  font-weight: bold;
 }
 
 .project-text p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .text {
@@ -54,15 +54,15 @@ transform: skew(-8deg);
 }
 
 .links {
-    display: flex;
-    flex-flow: column wrap;
-    line-height: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  line-height: 2rem;
 }
 
 .links a {
-    color: skyblue;
+  color: skyblue;
 }
 
 .links a:hover {
-    color: blue;
+  color: blue;
 }
