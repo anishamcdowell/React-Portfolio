@@ -1,68 +1,75 @@
-#portfolio {
-  margin-top: 3rem;
-}
-
-#portfolio h3 {
-  font-size: 50px;
-  color: white;
-  margin: 3rem 0;
-}
-
-.project-div {
-  width: 80%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 4rem;
-  /* box-shadow: -11px 12px 26px -8px rgba(0,0,0,0.62);
--webkit-box-shadow: -11px 12px 26px -8px rgba(0,0,0,0.62);
--moz-box-shadow: -11px 12px 26px -8px rgba(0,0,0,0.62); */
-  transform: skew(-8deg);
-}
-
-.image {
-  width: 70%;
-  height: 350px;
-  border-bottom-right-radius: 5rem;
-}
-
-.project-text h4 {
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.project-text p {
-  font-size: 16px;
-}
-
-.text {
-  background-color: skyblue;
-  width: 30%;
-  height: 350px;
-  color: white;
-  padding: 4rem 3rem;
-  border-top-left-radius: 5rem;
-}
-
 #project-map-container {
   margin: 4rem 0 5rem 0;
   width: 100%;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row nowrap;
+  justify-content: center;
   align-items: center;
 }
 
-.links {
+.project-div {
+  width: 100%;
   display: flex;
   flex-flow: column wrap;
-  line-height: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.links a {
-  color: skyblue;
+.image {
+  width: 90%;
+  height: 300px;
+  border-radius: 1rem;
 }
 
-.links a:hover {
-  color: blue;
+.project-text {
+  border-radius: 1rem;
+  width: 90%;
+  height: fit-content;
+  /* background: rgba(0, 0, 0, 0.75); */
+  padding: 2rem 4rem 2rem 4rem;
+  text-align: center;
+}
+
+.project-text p {
+  color: white;
+}
+
+.project-title {
+  font-family: var(--header-font);
+  font-size: var(--small-header);
+  font-weight: 700;
+  text-align: center;
+}
+
+.project-description {
+  color: black;
+}
+
+.links {
+  margin: 1rem;
+  color: var(--lightpurple);
+  text-decoration: none;
+  font-size: var(--small-body);
+}
+
+.links:hover {
+  color: var(--pink);
+}
+
+.technologies-div {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.technology-item {
+  font-size: var(--small-body);
+  background: var(--pink);
+  border-radius: 5rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0.25rem;
+  width: fit-content;
+  display: inline-block;
 }
