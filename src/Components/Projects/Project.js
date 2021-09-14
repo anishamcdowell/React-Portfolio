@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './project.css';
+// import './mobileproject.css';
 import MobileProjects from '../Mobile Components/Project Card/MobileProjects';
 import Connect from '../../images/work/connect-img.png';
 import Media from '../../images/work/media-img.png';
@@ -73,9 +74,7 @@ const Project = (props) => {
   ];
 
   return (
-    <div
-      id='portfolio'
-      className='p-3 border-0 rounded-0 d-flex flex-column justify-items-center align-items-center'>
+    <div id='work'>
       {width <= breakpoint ? (
         projects.map((project) => {
           return (
@@ -101,14 +100,20 @@ const Project = (props) => {
                     backgroundPosition: 'center',
                   }}></div>
                 <div className='project-text'>
-                  <p className='project-title'>{project.title}</p>
-                  <p className='project-description'>{project.description}</p>
-                  <a href={project.deployedLink} className='links'>
-                    Live Project
-                  </a>
-                  <a href={project.githubLink} className='links'>
-                    GitHub Repository
-                  </a>
+                  <div className='project-text-top-left'>
+                    <p className='project-title'>{project.title}</p>
+                    <p className='project-description'>{project.description}</p>
+                  </div>
+                  <div className='project-text-top-right'>
+                    <div className='links-div'>
+                      <a href={project.deployedLink} className='links'>
+                        Live Project
+                      </a>
+                      <a href={project.githubLink} className='links'>
+                        GitHub Repository
+                      </a>
+                    </div>
+                  </div>
                   <div className='technologies-div'>
                     {project.technologies.map((tech) => {
                       return <p className='technology-item'>{tech}</p>;
