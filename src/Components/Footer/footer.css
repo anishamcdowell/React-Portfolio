@@ -1,8 +1,24 @@
-li {
-    float: left;
-    margin: 0 1rem;
+#contact {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 10rem;
 }
 
-li a {
-    color: white;
+.icons-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.contact-icon {
+  margin: 2rem;
+}
+
+.copyright {
+  color: white;
+  font-family: var(--body-font);
+  font-size: var(--med-body);
+  margin-top: 2rem;
+  padding-bottom: 5rem;
 }

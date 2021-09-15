@@ -2,8 +2,14 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10rem;
-  padding: 10rem;
+  padding: 0 10%;
+  column-gap: 10rem;
+  margin-bottom: 10rem;
+}
+
+.about-buffer {
+  width: 100%;
+  grid-column: 1/3;
 }
 
 #about h2 {
@@ -18,9 +24,6 @@
 
 p {
   font-size: 1.1rem;
-}
-
-.left-div {
 }
 
 .left-div > h2 {

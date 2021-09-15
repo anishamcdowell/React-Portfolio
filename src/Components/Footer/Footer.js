@@ -1,27 +1,34 @@
-import React from "react";
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import "./footer.css";
+import './footer.css';
 
 function Footer() {
-    return(
-        <footer className="footer mb-auto py-4 bg-dark bg-gradient d-flex flex-column justify-content-evenly align-items-center" id="contact">
-          <div id="icons-container">
-      <ul id="socials-list">
-          <li className="social-li">
-              <a href="mailto: anishamcdowell@gmail.com"><FontAwesomeIcon icon="envelope" size="3x"/></a>
-          </li>
-          <li className="social-li">
-              <a href="https://www.linkedin.com/in/anishamcdowell/" target="blank"><FontAwesomeIcon icon={["fab", "linkedin"]} size="3x"/></a>
-          </li>
-          <li className="social-li">
-              <a href="https://github.com/anishamcdowell" target="blank"><FontAwesomeIcon icon={["fab", "github"]} size="3x"/></a>
-          </li>
-      </ul>
-
-    </div>
-          <span className="text-muted">&#169; 2021 Anisha McDowell</span>
-      </footer>
-    )
+  return (
+    <footer id='contact'>
+      <div id='icons-container'>
+        <a href='mailto: anishamcdowell@gmail.com' className='contact-icon'>
+          <FontAwesomeIcon icon='envelope' size='10x' color='white' />
+        </a>
+        <a
+          href='https://www.linkedin.com/in/anishamcdowell/'
+          target='blank'
+          className='contact-icon'>
+          <FontAwesomeIcon
+            icon={['fab', 'linkedin']}
+            size='10x'
+            color='white'
+          />
+        </a>
+        <a
+          href='https://github.com/anishamcdowell'
+          target='blank'
+          className='contact-icon'>
+          <FontAwesomeIcon icon={['fab', 'github']} size='10x' color='white' />
+        </a>
+      </div>
+      <span className='copyright'>&#169; 2021 Anisha McDowell</span>
+    </footer>
+  );
 }
 
 export default Footer;

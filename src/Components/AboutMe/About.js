@@ -48,6 +48,7 @@ export const About = () => {
 
   return (
     <div id='about'>
+      <div className='about-buffer'></div>
       <div className='left-div'>
         <h2>Bio</h2>
         <div className='about-copy'>
