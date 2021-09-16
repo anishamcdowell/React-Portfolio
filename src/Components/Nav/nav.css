@@ -1,5 +1,6 @@
 .navbar {
-    padding: 1rem;
+    padding: .5rem;
+    background: rgb(47, 104, 122);
 }
 
 .navbar a {
@@ -7,7 +8,7 @@
     font-weight: bold;
     text-decoration: none;
     margin-right: 1rem;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 .navbar a:hover {

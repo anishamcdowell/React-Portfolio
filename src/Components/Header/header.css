@@ -1,5 +1,4 @@
 #header {
-    background-color: skyblue;
     height: 100vh;
     display: flex;
     flex-flow: row nowrap;
@@ -25,11 +24,12 @@ h2 {
 
 
 .img-div {
-    width: 40%;
+    width: 30%;
     position: relative;
     top: -4rem;
-    right: 6rem;
-    padding: 11rem 0 0 0;
+    right: 10rem;
+    padding: 12rem 0 0 0;
+    margin-left: 5rem;
 }
 
 

@@ -4,7 +4,7 @@ import "./Nav/nav.css";
 function Nav() {
     const gold = {color: "#ffc107"}
     return (
-        <nav className="navbar navbar-expand-lg bg-dark px-4 py-3" style={{position: 'fixed', width: '100%', zIndex: '99'}}>
+        <nav className="navbar navbar-expand-lg px-4 py-3" style={{position: 'fixed', width: '100%', zIndex: '99'}}>
             <a className="navlink" href="#header">Home</a>
             <a className="navlink" href="#about">About Me</a>
             <a className="navlink" href="#portfolio">Portfolio</a>

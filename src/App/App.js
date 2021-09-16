@@ -25,7 +25,7 @@ function App() {
   }, [width])
   
   return (
-    <div id="app" style={{backgroundColor: 'skyblue'}}>
+    <div id="app">
       {width <= breakpoint ? (
         <>
         <Nav />

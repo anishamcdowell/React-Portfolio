@@ -5,6 +5,7 @@ export const About = () => {
   const frontEndSkills = [
     "HTML",
     "CSS",
+    "Sass",
     "Javascript",
     "jQuery",
     "Bootstrap",
@@ -12,7 +13,8 @@ export const About = () => {
   ];
   const backEndSkills = [
     "Javascript",
-    "Node.js",
+    "NodeJS",
+    "ExpressJS",
     "MySQL",
     "MongoDB",
     "Insomnia",
@@ -44,6 +46,15 @@ export const About = () => {
         <div className="bordered-content" id="bio-text">
         <p>
           Full stack web developer based in Charlotte, NC with 1 year of experience in backend development and 2 years experience with frontend development. July 2021 graduate of UNC Charlotte's Full Stack Web Development Coding Bootcamp. 
+        </p>
+        <p>
+          💡 I'm a tenacious problem solver who gives her all
+        </p>
+        <p>
+          😍 I'm passionate about learning new concepts and skills
+        </p>
+        <p>
+        🌱 I learn and work with a growth mindset the follows the 'power of yet'
         </p>
         <p>
           Outside of web development and design, I enjoy other creative activies like drawing, painting, and writing.
