@@ -10,6 +10,8 @@
 .about-section {
   width: 40%;
   overflow-y: hidden;
+  height: 27rem;
+  border-radius: 1rem;
 }
 
 .about-section h3 {
@@ -53,9 +55,11 @@ p {
   background-color: rgba(255,255,255,0.5);
   border-radius: 1rem;
   padding: 2rem;
-  min-height: fit-content;
-  max-height: 20rem;
   overflow-y: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 1000px) {

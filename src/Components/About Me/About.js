@@ -35,17 +35,15 @@ export const About = () => {
   console.log(width);
 
   return (
-    <div id="about">
-
+    <section id="about">
       <div id="bio" className="about-section">
-
         <div className="d-flex justify-content-center">
           <h3>Bio</h3>
         </div>
 
         <div className="bordered-content" id="bio-text">
         <p>
-          Full stack web developer based in Charlotte, NC with 1 year of experience in backend development and 2 years experience with frontend development. July 2021 graduate of UNC Charlotte's Full Stack Web Development Coding Bootcamp. 
+          Full stack web developer based in Charlotte, NC. July 2021 graduate of UNC Charlotte's Full Stack Web Development Coding Bootcamp. 
         </p>
         <p>
           💡 I'm a tenacious problem solver who gives her all
@@ -57,7 +55,7 @@ export const About = () => {
         🌱 I learn and work with a growth mindset the follows the 'power of yet'
         </p>
         <p>
-          Outside of web development and design, I enjoy other creative activies like drawing, painting, and writing.
+          Outside of web development I enjoy other creative activies like drawing, painting, and writing.
         </p>
         </div>
       </div>
@@ -97,7 +95,7 @@ export const About = () => {
         </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
