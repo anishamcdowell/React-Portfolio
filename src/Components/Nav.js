@@ -2,7 +2,6 @@ import React from "react";
 import "./Nav/nav.css";
 
 function Nav() {
-    const gold = {color: "#ffc107"}
     return (
         <nav className="navbar navbar-expand-lg bg-dark px-4 py-3" style={{position: 'fixed', width: '100%', zIndex: '99'}}>
             <a className="navlink" href="#header">Home</a>
