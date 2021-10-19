@@ -12,9 +12,6 @@ function Header() {
             <div className="header-font">
             <BrandHeading />
             </div>
-            <div className="img-div">
-            <ProfilePic />
-            </div>
         </header>
     )
 }

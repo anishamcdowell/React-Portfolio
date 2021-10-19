@@ -5,6 +5,7 @@ import "./brandheading.css";
 const BrandHeading = () => {
   return (
     <div id="brand-heading-div">
+      <div class="branding">
       <Logo />
       <div className="text-container">
         <h1 className="name" id="nisha">
@@ -13,7 +14,9 @@ const BrandHeading = () => {
         <h1 className="name" id="mcdowell">
           McDowell
         </h1>
+        </div>
       </div>
+      <h2 id="description">Full Stack Web Developer</h2>
     </div>
   );
 };

@@ -1,25 +1,47 @@
 #about {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 0 5rem 5rem 5rem;
-
+  padding: 0 4rem;
 }
 
-.about-section {
-  width: 40%;
+#bio {
+  width: 50%;
   overflow-y: hidden;
 }
 
-.about-section h3 {
+#bio h3,
+#skills-container h3 {
   font-size: 50px;
-  color: white;
+  color: hotpink;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
 }
 
-#and p {
-  font-size: 80px;
-  color: white;
+.about-divider {
+  background: lavenderblush;
+  width: 1.5rem;
+  height: 20rem;
+  transform: skew(-10deg);
+  position: relative;
+  top: 5rem;
+}
+
+#about:before,
+#about:after {
+  content: "<";
+  color: rgba(255, 164, 210,0.5);
+  font-size: 20rem;
+  font-weight: bold;
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+#about:after {
+  content: ">";
+}
+
+#skills-container {
+  width: 50%;
 }
 
 #skills {

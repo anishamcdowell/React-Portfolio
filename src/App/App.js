@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from "react";
 import "./app.css";
-import Nav from "../Components/Nav";
+import Nav from "../Components/Nav/Nav";
 import About from "../Components/About Me/About";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
@@ -36,7 +36,8 @@ function App() {
      </>
       ) : (
         <>
-      <Nav />
+             <Nav />
+
      <Header />
      <About />
      <Project />

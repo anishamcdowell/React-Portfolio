@@ -60,16 +60,10 @@ export const About = () => {
           Outside of web development and design, I enjoy other creative activies like drawing, painting, and writing.
         </p>
         </div>
-      </div>
-      {width <= breakpoint ? (
-        <></>
-      ) : (
-        <div id="and"><p>&</p></div>
-      )}    
+      </div>  
+      <div className="about-divider"></div>
       <div id="skills-container"  className="about-section">
-      <div className="d-flex justify-content-center">
           <h3>Skills</h3>
-          </div>
       <div id="skills" className="bordered-content">
         <div id="frontend-skills">
             <p className="skill-header">Frontend</p>

@@ -45,10 +45,35 @@
 
 #project-map-container {
   margin: 4rem 0 5rem 0;
-  width: 100%;
+  width: 80%;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   align-items: center;
+}
+
+.project-container {
+  width: 30%;
+  height: fit-content;
+  overflow-y: hidden;
+  margin: 1rem;
+}
+
+.project-image img {
+  width: 200%;
+  position: relative;
+  right: 9rem;
+}
+
+.project-text {
+  text-align: center;
+  color: black;
+  padding: 2rem;
+  border: 2px hotpink solid;
+  border-top: none;
+}
+
+.project-text span a {
+  margin: 0 1rem;
 }
 
 .links {
