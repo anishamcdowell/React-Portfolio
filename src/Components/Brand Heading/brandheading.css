@@ -1,107 +1,91 @@
 #brand-heading-div {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    width: 100%;
-    z-index: 90;
-    overflow-y: hidden;
-    position: relative;
-    height:fit-content;
-    margin-top: 5rem;
-    height: 100vh;
+  height: 80vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.branding {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+.branding,
+.logo-div,
+.text-container,
+h2,
+.name {
+  width: fit-content;
+  height: fit-content;
+}
 
+.branding-grid {
+  display: grid;
+  grid-template-columns: 12% 110%;
+  grid-template-rows: 90% 10%;
+  margin-left: 15%;
+}
+
+.logo-div {
+  width: 300%;
 }
 
 .text-container {
-    position: relative;
-    /* border: 3px yellow dotted; */
-    height: fit-content;
-    top: 6rem;
-    left: -3.5rem;
-    padding-left: 1rem;
-    overflow-y: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  top: 25%;
+  left: 13%;
+  padding-right: 5%;
+  padding-left: 1%;
 }
 
 .name {
-    font-size: 5rem;
-    font-weight: bold;
-    line-height: 4rem;
-    height: fit-content;
-    overflow-y: hidden;
-    color: black;
+  font-size: 9vw;
+  font-weight: bold;
+  height: fit-content;
+  overflow-y: hidden;
+  color: black;
+  line-height: 80%;
 }
 
 #nisha {
-    position: relative;
-    left: -1rem;
-    overflow-y: hidden;
-    color: rgb(255, 164, 210);
+  overflow-y: hidden;
+  color: rgb(255, 164, 210);
 }
 
 #mcdowell {
-    color: hotpink;
+  color: hotpink;
+  position: relative;
+  top: -0.5rem;
+  left: 5%;
 }
 
 #description {
-    width: fit-content;
-    position: relative;
-    padding: .25rem 2rem;
-    left: 6rem;
-    top: -4rem;
-    letter-spacing: .25rem;
-    text-transform: uppercase;
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: gray;
-    background: white;
-    border-radius: 5rem;
+  position: relative;
+  top: -0.75rem;
+  left: -2%;
+  font-size: 2vw;
+  padding: 0.25rem 2vw;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: gray;
+  background: white;
+  border-radius: 5rem;
 }
 
-@media screen and (max-width: 830px) {
-    .name {
-        font-size: 5rem;
-    }
+@media screen and (max-width: 800px) {
+  #brand-heading-div {
+    height: 40vh;
+  }
+  #description {
+    top: -0.75rem;
+    padding: 0.75 0;
+  }
 }
 
-@media screen and (max-width: 680px) {
-    .text-container {
-        top: 3rem;
-        left: -2.5rem;
-    }
-    .name {
-        font-size: 3.5rem;
-    }
-    #mcdowell {
-        position: relative;
-        top: -2rem;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .text-container {
-        top: -.75rem;
-        left: -1.5rem;
-        height: 100px;
-    }
-    .name {
-        font-size: 3rem;
-    }
-    #mcdowell {
-        top: -3rem;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .text-container {
-        left: -1rem;
-    }
-    .name {
-        font-size: 2.5rem;
-    }
+@media screen and (max-width: 500px) {
+  #brand-heading-div {
+    height: 30vh;
+  }
+  #description {
+    letter-spacing: 0.1rem;
+  }
 }
