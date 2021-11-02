@@ -6,6 +6,7 @@ import About from '../Components/AboutMe/About';
 import Header from '../Components/Header/Header';
 import Footer from '../Components/Footer/Footer';
 import Project from '../Components/Projects/Project';
+import MobileNav from '../Components/Mobile Components/MobileNav/MNav';
 import MobileHeader from '../Components/Mobile/Header/MHeader';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
@@ -64,7 +65,7 @@ function App() {
       }}>
       {width <= breakpoint ? (
         <>
-          <Nav />
+          <MobileNav />
           <MobileHeader />
           <About />
           <Project />

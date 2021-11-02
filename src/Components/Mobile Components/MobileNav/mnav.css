@@ -1,0 +1,38 @@
+.mobile-nav-div {
+  width: 100%;
+  height: 5rem;
+  padding: 1rem;
+  position: fixed;
+  animation-name: intro;
+  animation-duration: 2s;
+  background: black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-navlink {
+  text-decoration: none;
+  font-size: var(--small-body);
+  color: var(--lightpurple);
+  text-transform: uppercase;
+  text-underline-offset: 1rem;
+  transition: text-decoration 2s;
+  margin: 0 0.5rem;
+}
+
+.mobile-navlink:hover {
+  color: white;
+  text-decoration: var(--pink) underline;
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+    transform: skewX(20deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,23 +1,71 @@
-.container {
-    width: 100%;
-    background: red;
-    display: flex;
-    justify-content: center;
-}
-
 #mheader-div {
-    display: flex;
-    flex-flow: row nowrap;
-    height: fit-content;
-    padding-top: 6rem;
-    margin-bottom: 3rem;
-    overflow-y: hidden;
-    position: relative;
+  width: 100%;
+  height: fit-content;
+  padding-top: 5%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 30%;
 }
 
-@media screen and (max-width: 580px) {
-    #mheader-div {
-        padding-top: 0;
-        margin-top: 25%;
-    }
+.mheader-h1,
+.mheader-h1:after {
+  color: var(--black);
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: relative;
+  width: 50%;
+}
+
+.mheader-h1 {
+  animation-name: transform;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  z-index: 2;
+}
+
+.mheader-h1:after {
+  content: 'Anisha McDowell';
+  color: var(--lightpurple);
+  font-family: var(--header-font);
+  position: relative;
+  top: -5.5rem;
+  z-index: 1;
+  animation-name: opacity;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  float: left;
+}
+
+.mheader-p {
+  color: var(--pink);
+  font-size: var(--med-body);
+  font-weight: 400;
+  text-transform: uppercase;
+  animation-name: transform;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes transform {
+  0% {
+    transform: translateX(-100rem);
+    transform: skewX(-10deg);
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
