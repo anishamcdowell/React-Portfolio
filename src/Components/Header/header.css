@@ -1,76 +1,74 @@
 #header {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    overflow-y: hidden;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  overflow: hidden;
 }
 
 h2 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 #header-text-container {
-    position: relative;
-    top: -14rem;
-    left: 17rem;
-    font-size: 50px;
+  position: relative;
+  top: -14rem;
+  left: 17rem;
+  font-size: 50px;
 }
 
 .header-font {
-    margin: 6rem 0 0 3rem;
-    width: 100%;
+  margin: 6rem 0 0 3rem;
+  width: 100%;
 }
-
 
 .img-div {
-    width: 30%;
-    position: relative;
-    top: -4rem;
-    right: 10rem;
-    padding: 12rem 0 0 0;
-    margin-left: 5rem;
+  width: 30%;
+  position: relative;
+  top: -4rem;
+  right: 10rem;
+  padding: 12rem 0 0 0;
+  margin-left: 5rem;
 }
 
-
 @media (max-width: 1000px) {
-    #header-text-container {
-        padding-left: 4rem;
-    }
-    #profile-pic-container {
-        margin-right: 2rem;
-    }
+  #header-text-container {
+    padding-left: 4rem;
+  }
+  #profile-pic-container {
+    margin-right: 2rem;
+  }
 }
 
 @media (max-width: 767px) {
-    #header-text-container,
-    #profile-pic-container {
-        width: 50%;
-        padding: 1rem;
-        margin: 0;
-    }
-    #profile-pic-container {
-        padding-top: 1rem;
-    }
+  #header-text-container,
+  #profile-pic-container {
+    width: 50%;
+    padding: 1rem;
+    margin: 0;
   }
+  #profile-pic-container {
+    padding-top: 1rem;
+  }
+}
 
-  @media (max-width: 400px) {
-    .profile-pic {
-        max-width: 250px;
-    }
-    #header-text-container,
-    #profile-pic-container {
-        width: 100%;
-    }
-    #header-text-container {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        text-align: center;
-    }
-    #profile-pic-container {
-        padding-top: 0;
-    }
-    #small-header-btn {
-        margin-bottom: 1.5rem;
-    }
+@media (max-width: 400px) {
+  .profile-pic {
+    max-width: 250px;
   }
+  #header-text-container,
+  #profile-pic-container {
+    width: 100%;
+  }
+  #header-text-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+  }
+  #profile-pic-container {
+    padding-top: 0;
+  }
+  #small-header-btn {
+    margin-bottom: 1.5rem;
+  }
+}

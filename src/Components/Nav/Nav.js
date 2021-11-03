@@ -22,9 +22,9 @@ function Nav() {
 
   if (width >= breakpoint) {
     return (
-      <nav className='nav' style={{ justifyContent: 'center' }}>
-        <a className='navlink' href='#header'>
-          Home
+      <nav className='nav' id='nav' style={{ justifyContent: 'center' }}>
+        <a className='navlink' href='#'>
+          Top
         </a>
         <a className='navlink' href='#about'>
           About Me
@@ -35,7 +35,7 @@ function Nav() {
         <a className='navlink' href='#contact'>
           Contact
         </a>
-        <a className='navlink' href=''>
+        <a className='navlink' href='../../assets/resume.pdf' download>
           Resume
         </a>
       </nav>
@@ -45,8 +45,8 @@ function Nav() {
       <div className='mobile-bg'>
         <nav className='nav mobile-nav' style={{ justifyContent: 'flex-end' }}>
           <div id='mobile-nav' className='hide topnav'>
-            <a className='navlink' href='#header' onClick={showMobileNav}>
-              Home
+            <a className='navlink' href='#' onClick={showMobileNav}>
+              Top
             </a>
             <a className='navlink' href='#about' onClick={showMobileNav}>
               About Me
@@ -57,7 +57,11 @@ function Nav() {
             <a className='navlink' href='#contact' onClick={showMobileNav}>
               Contact
             </a>
-            <a className='navlink' href='' onClick={showMobileNav}>
+            <a
+              className='navlink'
+              href='../../assets/resume.pdf'
+              onClick={showMobileNav}
+              download>
               Resume
             </a>
           </div>
