@@ -29,15 +29,15 @@
 
 #about:before,
 #about:after {
-  content: "<";
-  color: rgba(255, 164, 210,0.5);
+  content: '<';
+  color: rgba(255, 164, 210, 0.5);
   font-size: 20rem;
   font-weight: bold;
   /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
 
 #about:after {
-  content: ">";
+  content: '>';
 }
 
 #skills-container {
@@ -72,7 +72,7 @@ p {
 }
 
 .bordered-content {
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 1rem;
   padding: 2rem;
   min-height: fit-content;
@@ -80,45 +80,58 @@ p {
   overflow-y: hidden;
 }
 
+@media screen and (max-width: 1280px) {
+  #about {
+    display: flex;
+    flex-flow: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  #about:before,
+  #about:after {
+    content: '';
+  }
+  #about > h2:before {
+    content: '<';
+  }
+  #about > h2:after {
+    content: '>';
+  }
+}
+
 @media only screen and (max-width: 1000px) {
-    #about {
-        display: flex;
-        flex-flow: column;
-        padding-left: 2rem;
-        padding-right: 2rem;
-      }
-      .about-section {
-        width: 100%;
-      }
-      #skills-container {
-          margin-top: 2rem;
-      }
-      #bio-text {
-        height: 11rem;
-      }
+  .about-section {
+    width: 100%;
+  }
+  #skills-container {
+    margin-top: 2rem;
+  }
+  #bio-text {
+    height: 11rem;
+  }
 }
 
 @media only screen and (max-width: 815px) {
-      #bio-text {
-        height: 13rem;
-      }
+  #bio-text {
+    height: 13rem;
+  }
 }
 
 @media only screen and (max-width: 515px) {
-    #bio-text {
-      height: 15rem;
-    }
+  #bio-text {
+    height: 15rem;
+  }
 }
 
 @media only screen and (max-width: 485px) {
-    #bio-text {
-      height: 18rem;
-    }
+  #bio-text {
+    height: 18rem;
+  }
 }
 
 @media only screen and (max-width: 360px) {
-    #bio-text,
-    #skills {
-      height: 25rem;
-    }
+  #bio-text,
+  #skills {
+    height: 25rem;
+  }
 }
