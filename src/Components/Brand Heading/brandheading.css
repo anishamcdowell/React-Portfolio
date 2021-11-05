@@ -38,6 +38,11 @@ h2,
   padding-left: 1%;
 }
 
+.name,
+#description {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .name {
   font-size: 9vw;
   font-weight: bold;

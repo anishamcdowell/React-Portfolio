@@ -2,3 +2,9 @@
   margin: 0 auto;
   padding: 0;
 }
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 18px;
+  letter-spacing: -1px;
+}

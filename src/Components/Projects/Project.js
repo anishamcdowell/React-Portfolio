@@ -66,8 +66,8 @@ const Project = (props) => {
                   <img src={project.img} />
                 </div>
                 <div className='project-text'>
-                  <p>{project.title}</p>
-                  <p>{project.description}</p>
+                  <p className='project-title'>{project.title}</p>
+                  <p className='project-description'>{project.description}</p>
                   <span>
                     <a href={project.deployedLink}>Live Project</a>
                     <a href={project.githubLink}>Repository</a>
