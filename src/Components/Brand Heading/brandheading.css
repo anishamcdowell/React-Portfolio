@@ -1,10 +1,9 @@
 #brand-heading-div {
-  height: 80vh;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10vh;
+  margin-top: 10vh;
   overflow: hidden;
 }
 

@@ -61,32 +61,8 @@ const Project = (props) => {
         <div id='project-map-container'>
           {projects.map((project) => {
             return (
-              //     <div class="project-div">
-              //         <div className="text bg-dark bg-gradient">
-              //         <div className="project-text">
-              //           <h4>{project.title}</h4>
-              //           <p>{project.description}</p>
-              //         </div>
-              //         <div className="links">
-              //           <a href={project.deployedLink} className="link">
-              //             Deployed Project
-              //           </a>
-              //           <a href={project.githubLink} className="link">
-              //             GitHub Codebase
-              //           </a>
-              //         </div>
-              //       </div>
-              //       <div
-              //         className="image"
-              //         style={{
-              //           backgroundImage: `url(${project.img})`,
-              //           backgroundSize: "cover",
-              //           backgroundPosition: "center",
-              //         }}
-              //       ></div>
-              //     </div>
               <div className='project-container'>
-                <div className='project-image'>
+                <div className='project-image-container'>
                   <img src={project.img} />
                 </div>
                 <div className='project-text'>

@@ -1,91 +1,27 @@
-#portfolio {
-  margin-top: 3rem;
-}
-
-#portfolio h3 {
-  font-size: 50px;
-  color: white;
-  margin: 3rem 0;
-}
-
-.project-div {
-  width: 80%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 4rem;
-  /* box-shadow: -11px 12px 26px -8px rgba(0,0,0,0.62);
--webkit-box-shadow: -11px 12px 26px -8px rgba(0,0,0,0.62);
--moz-box-shadow: -11px 12px 26px -8px rgba(0,0,0,0.62); */
-  border-radius: 0.5rem;
-}
-
-.image {
-  width: 70%;
-  height: 350px;
-}
-
-.project-text h4 {
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.project-text p {
-    font-size: 16px;
-}
-
-.text {
-  background-color: skyblue;
-  width: 30%;
-  height: 350px;
-  color: white;
-  padding: 4rem 3rem;
-}
-
 #project-map-container {
-  margin: 4rem 0 5rem 0;
-  width: 80%;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  justify-content: space-evenly;
+  margin: 5rem auto;
+  background: red;
+  height: 100vh;
 }
 
 .project-container {
-  width: 30%;
-  height: fit-content;
-  overflow-y: hidden;
-  margin: 1rem;
+  background: pink;
+  height: 40rem;
+  overflow: hidden;
 }
 
-.project-image img {
-  width: 200%;
+.project-image-container {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+}
+
+.project-image-container > img {
+  object-fit: cover;
+  max-height: 30rem;
   position: relative;
-  right: 9rem;
-}
-
-.project-text {
-  text-align: center;
-  color: black;
-  padding: 2rem;
-  border: 2px hotpink solid;
-  border-top: none;
-}
-
-.project-text span a {
-  margin: 0 1rem;
-}
-
-.links {
-    display: flex;
-    flex-flow: column wrap;
-    line-height: 2rem;
-}
-
-.links a {
-    color: skyblue;
-}
-
-.links a:hover {
-    color: blue;
 }

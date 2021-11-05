@@ -20,7 +20,7 @@ export const About = () => {
     'MongoDB',
     'Insomnia',
   ];
-  const generalSkills = ['Git', 'OOP', 'MVC'];
+  const generalSkills = ['Git', 'OOP', 'MVC', 'Adobe XD', 'Figma'];
 
   const [width, setWidth] = useState(window.innerWidth);
   const handleResize = () => {
@@ -58,7 +58,7 @@ export const About = () => {
           <p>
             To get my bearings in current industry technologies and trends, I
             enrolled in (and in July 2021 graduated from) a 6-month long full
-            stack certification program. Since then I've levelled up my skills,
+            stack certification program. Since then I've leveled up my skills,
             become more passionate about web development than ever before, and
             I'm ready to get to work.
           </p>

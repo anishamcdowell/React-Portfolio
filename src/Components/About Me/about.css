@@ -48,7 +48,7 @@
   background: lavenderblush;
   width: 1.5rem;
   min-height: 20rem;
-  max-height: 30rem;
+  max-height: 40rem;
   transform: skew(-10deg);
   position: relative;
   top: 10rem;
@@ -58,7 +58,6 @@
 #about:before,
 #about:after {
   content: '<';
-  color: rgba(255, 164, 210, 0.5);
   display: flex;
   flex-flow: row wrap;
   align-content: center;
@@ -66,7 +65,7 @@
   font-weight: bold;
   position: relative;
   top: 2rem;
-  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  color: rgba(255, 164, 210, 0.5);
 }
 
 #about:after {
