@@ -1,0 +1,32 @@
+@media screen and (max-width: 1280px) {
+  #about {
+    flex-flow: column wrap;
+    align-items: center;
+    background: blue;
+    margin: 0;
+  }
+  #about:before,
+  #about:after {
+    content: '';
+  }
+  #bio-container,
+  #skills-container {
+    width: 80%;
+    overflow-y: hidden;
+  }
+  #bio-container > h3:before,
+  #bio-container > h3:after,
+  #skills-container > h3:before,
+  #skills-container > h3:after {
+    content: '{ ';
+  }
+  #bio-container > h3:after,
+  #skills-container > h3:after {
+    content: ' }';
+  }
+  .about-divider {
+    display: none;
+  }
+  #skills {
+  }
+}
