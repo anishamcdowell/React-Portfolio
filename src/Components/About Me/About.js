@@ -41,20 +41,26 @@ export const About = () => {
         <h3 className='about-sections-header'>Bio</h3>
         <div className='about-section-text' id='bio-text'>
           <p>
-            Full stack web developer based in Charlotte, NC with 1 year of
-            experience in backend development and 2 years experience with
-            frontend development. July 2021 graduate of UNC Charlotte's Full
-            Stack Web Development Coding Bootcamp.
-          </p>
-          <p>💡 I'm a tenacious problem solver who gives her all</p>
-          <p>😍 I'm passionate about learning new concepts and skills</p>
-          <p>
-            🌱 I learn and work with a growth mindset the follows the 'power of
-            yet'
+            Hey there! My name's Anisha and I'm a full stack web developer based
+            out of Charlotte, NC.
           </p>
           <p>
-            Outside of web development and design, I enjoy other creative
-            activies like drawing, painting, and writing.
+            I've been building websites on and off for fun ever since my mom, a
+            computer science degree holder and teacher of the same subject at my
+            middle school, introduced me to HTML and CSS at age 11.
+          </p>
+          <p>
+            I strayed away from coding for a few years but found my way back to
+            it toward the end of 2020. Then, in the middle of the COVID-19
+            pandemic, I realized what I was doing for fun was something I wanted
+            to do for a living.
+          </p>
+          <p>
+            To get my bearings in current industry technologies and trends, I
+            enrolled in (and in July 2021 graduated from) a 6-month long full
+            stack certification program. Since then I've levelled up my skills,
+            become more passionate about web development than ever before, and
+            I'm ready to get to work.
           </p>
         </div>
       </section>
