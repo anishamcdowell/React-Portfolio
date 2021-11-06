@@ -1,22 +1,33 @@
 .mobile-project-div {
     margin-bottom: 2rem;
-    height: 15rem;
-    border-radius: 1rem;
-    width: 90%;
+    border-radius: .5rem;
+    width: 85%;
     overflow-y: hidden;
 }
 
 .mobile-text-div {
     padding: 2rem 1rem;
     height: 100%;
-    background-color: rgb(0,0,0, 0.75);
+    background-color: rgba(255, 105, 180,0.5);
     text-align: center;
 }
 
-.project-text {
-    color: white;
+.mobile-project-text {
+    color: black;
+    background: rgba(255,255,255,0.75);
+    padding: 2rem;
 }
 
-.mobile-project-image {
-    height: 20rem;
+.mobile-project-title {
+    font-size: 4vw;
+    margin-bottom: 2rem;
+}
+
+.mobile-project-links {
+    font-size: .85rem;
+}
+
+.mobile-project-div:hover {
+    box-shadow: 0px 1px 15px 1px rgba(100, 149, 237, 0.9);
+    /* transform: translateY(-.5rem); */
 }

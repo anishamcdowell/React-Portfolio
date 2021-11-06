@@ -20,7 +20,7 @@ const Project = (props) => {
   const projects = [
     {
       title: '.connect( )',
-      description: 'MERN stack dating web app for remote tech sector workers.',
+      description: 'MERN stack dating web app that uses a "swipe" feature and real-time messaging to connect users.',
       deployedLink: 'https://connect-dating-app.herokuapp.com/',
       githubLink: 'https://github.com/tmgorogers/Connect-Dating-App',
       img: Connect,
@@ -61,17 +61,19 @@ const Project = (props) => {
         <div id='project-map-container'>
           {projects.map((project) => {
             return (
-              <div className='project-container'>
+              <div className='project-grid-container'>
+                <div className='project-container'>
                 <div className='project-image-container'>
                   <img src={project.img} />
                 </div>
                 <div className='project-text'>
                   <p className='project-title'>{project.title}</p>
                   <p className='project-description'>{project.description}</p>
-                  <span>
-                    <a href={project.deployedLink}>Live Project</a>
-                    <a href={project.githubLink}>Repository</a>
-                  </span>
+                  <div className='project-links-container'>
+                    <a href={project.deployedLink}className='project-links'>Live Project</a>
+                    <a href={project.githubLink}className='project-links'>Repository</a>
+                  </div>
+                </div>
                 </div>
               </div>
             );
