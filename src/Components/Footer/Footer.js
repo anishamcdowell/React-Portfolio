@@ -5,7 +5,7 @@ import "./footer.css";
 function Footer() {
     return(
         <footer className="footer mb-auto py-4 d-flex flex-column justify-content-evenly align-items-center" id="contact">
-            <p>Currently seeking work and open to good conversation.</p>
+            <p className='footer-message'> Currently seeking work and open to good conversation.</p>
           <div id="icons-container">
       <ul id="socials-list">
           <li className="social-li">

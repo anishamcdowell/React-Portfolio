@@ -1,38 +1,11 @@
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 600px) {
   #about {
-    flex-flow: column wrap;
-    align-items: center;
-    margin: 0 auto;
-  }
-  #about:before,
-  #about:after,
-  #skills:before {
-    display: none;
+    width: 100%;
   }
   #bio:before {
-    height: 8rem;
-  }
-  #bio,
-  #skills {
-    width: 80%;
-    overflow-y: hidden;
-  }
-  #bio > h3:before,
-  #bio > h3:after,
-  #skills > h3:before,
-  #skills > h3:after {
-    content: '{ ';
-    font-size: 3vw;
-    color: rgba(255, 164, 210, 0.5);
-  }
-
-  #bio > h3:after,
-  #skills > h3:after {
-    content: ' }';
-  }
-  .about-divider {
-    display: none;
+    height: 3rem;
   }
   #skills {
+    padding: 1rem;
   }
 }

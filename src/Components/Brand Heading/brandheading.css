@@ -32,7 +32,7 @@ h2,
   display: flex;
   flex-flow: column nowrap;
   position: relative;
-  top: 25%;
+  top: 20%;
   left: 13%;
   padding-right: 5%;
   padding-left: 1%;
@@ -49,7 +49,7 @@ h2,
   height: fit-content;
   overflow-y: hidden;
   color: black;
-  line-height: 80%;
+  line-height: 90%;
 }
 
 #nisha {
@@ -94,5 +94,11 @@ h2,
   }
   #description {
     letter-spacing: 0.1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #brand-heading-div {
+    margin-top: 0rem;
   }
 }

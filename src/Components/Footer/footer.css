@@ -10,3 +10,14 @@ li a {
 li a:hover {
     color: cornflowerblue;
 }
+
+.footer-message {
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+    .footer-message {
+        text-align: center;
+        width: 90%;
+    }
+}
