@@ -5,6 +5,7 @@
   align-items: center;
   margin-top: 10vh;
   overflow: hidden;
+  position: relative;
 }
 
 .branding,
@@ -62,6 +63,7 @@ h2,
   position: relative;
   top: -0.5rem;
   left: 5%;
+  font-size: 7.5vw;
 }
 
 #description {

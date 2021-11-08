@@ -5,6 +5,10 @@
     overflow-y: hidden;
 }
 
+.mobile-project-div:nth-child(1) {
+    margin-top: 4rem;
+}
+
 .mobile-text-div {
     padding: 2rem 1rem;
     height: 100%;

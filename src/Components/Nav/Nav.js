@@ -35,7 +35,7 @@ function Nav() {
         <a className='navlink' href='#contact'>
           Contact
         </a>
-        <a className='navlink' href='../../assets/resume.pdf' download>
+        <a className='navlink' href='http://www.anishamcdowell.herokuapp.com/assets/resume.pdf' download>
           Resume
         </a>
       </nav>
