@@ -59,7 +59,7 @@ function Nav() {
             </a>
             <a
               className='navlink'
-              href='../../assets/resume.pdf'
+              href='assets/resume.pdf'
               onClick={showMobileNav}
               download>
               Resume
