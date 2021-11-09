@@ -35,7 +35,7 @@ function Nav() {
         <a className='navlink' href='#contact'>
           Contact
         </a>
-        <a className='navlink' href='assets/resume.pdf' target="_blank">
+        <a className='navlink' href='https://drive.google.com/file/d/1xU0mMdUqSTi3zgMDk9DGaYrP4vV9qc_I/view?usp=sharing' target="_blank">
           Resume
         </a>
       </nav>
