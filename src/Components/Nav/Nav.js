@@ -35,7 +35,7 @@ function Nav() {
         <a className='navlink' href='#contact'>
           Contact
         </a>
-        <a className='navlink' href='resume.pdf' target="_blank">
+        <a className='navlink' href='assets/resume.pdf' target="_blank">
           Resume
         </a>
       </nav>
